@@ -19,7 +19,6 @@ namespace AuthService.Infrastructure.Data
                 entity.Property(u => u.FirstName).IsRequired().HasMaxLength(100);
                 entity.Property(u => u.LastName).IsRequired().HasMaxLength(100);
                 entity.Property(u => u.PasswordHash).IsRequired();
-                entity.Property(u => u.Role).HasDefaultValue("User");
             });
         }
     }
